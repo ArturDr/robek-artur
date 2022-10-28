@@ -29,8 +29,6 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php robek_artur_post_thumbnail(); ?>
-
 	<div class="entry-content">
 		<?php
 		the_content(
