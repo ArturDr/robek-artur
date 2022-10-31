@@ -18,5 +18,4 @@ get_header();
 Strona główna
 
 <?php
-get_sidebar();
 get_footer();
