@@ -25,7 +25,7 @@ get_header(); ?>
             if ($post_count % 3 == 0) : ?>
                 </div>
                 <div class="row">
-                <?php endif; ?>
+            <?php endif; ?>
                 <div class="col-md-4 col-12">
                     <?php
                     the_post();
