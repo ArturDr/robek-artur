@@ -106,6 +106,11 @@ get_header();
             endwhile;?>
         </div>
     </div>
+    <div class='row button-row'>
+        <div class='col text-center'>
+            <a class='btn ar-button' href="<?php echo get_post_type_archive_link('realizacje'); ?>">Wszystkie realizacje</a>
+        </div>
+    </div>
     <?php wp_reset_postdata(); ?>
     <!-- end of projects section -->
 </div>
