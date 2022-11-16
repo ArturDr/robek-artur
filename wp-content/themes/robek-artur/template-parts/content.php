@@ -10,48 +10,38 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
 		<?php
+        $technologyList = esc_html(get_field('technology'));
+        $image1 = esc_url(get_field('obraz_1'));
+        $image2 = esc_url(get_field('obraz_2'));
+        $image3 = esc_url(get_field('obraz_3'));
+        $url = esc_url(get_field('url_projektu'));
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				robek_artur_posted_on();
-				robek_artur_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'robek-artur' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'robek-artur' ),
-				'after'  => '</div>',
-			)
-		);
+			the_title( '<div class="row"><div class="col"><h1 class="realizacje-title">', '</h1></div></div>' );?>
+			</div>
+			<div class="row">
+				<div class="col">
+					<p><?php the_content(); ?></p>
+				</div>
+			</div>
+			<?php
+		else :?>
+			<div class="row">
+				<div class="col">
+					<h2 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<p><?php the_excerpt()?></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<a class="btn ar-button" href="<?php the_permalink()?>">Więcej</a>
+				</div>
+			</div>
+			<?php
+        endif;
 		?>
-	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -41,8 +41,21 @@ get_header();
 				get_template_part( 'template-parts/content', get_post_type() );
 
 			endwhile;
-
-			the_posts_navigation();
+			if(get_previous_posts_link() || get_next_posts_link()) :?>
+            <div class="row justify-content-between">
+				<div class="col-md-3 col-5">
+                <?php if(get_previous_posts_link()) : ?>
+					<a class="btn ar-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze realizacje</a>
+                <?php endif;?>
+				</div>
+				<div class="col-md-3 col-5">
+                <?php if(get_next_posts_link()) : ?>
+					<a class="btn ar-button" href="<?php echo get_next_posts_page_link(); ?>">Starsze realizacje</a>
+                <?php endif;?>
+				</div>
+			</div>
+            <?php
+            endif;
 
 		else :
 

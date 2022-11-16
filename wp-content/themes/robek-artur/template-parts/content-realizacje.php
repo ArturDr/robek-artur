@@ -86,12 +86,5 @@
 			</div>
 			<?php
         endif;
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'robek-artur' ),
-				'after'  => '</div>',
-			)
-		);
 		?>
 </article><!-- #post-<?php the_ID(); ?> -->
