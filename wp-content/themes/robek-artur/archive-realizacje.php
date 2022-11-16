@@ -15,6 +15,11 @@ get_header(); ?>
 <?php if (have_posts()) : ?>
 
     <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Realizacje</h1>
+        </div>
+    </div>
         <div class="row">
 
         <?php

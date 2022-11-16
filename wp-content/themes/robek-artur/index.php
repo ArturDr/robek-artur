@@ -17,6 +17,11 @@ get_header();
 <div class="container">
 
 	<main id="primary" class="site-main">
+	<div class="row">
+        <div class="col">
+            <h1>Blog</h1>
+        </div>
+    </div>
 
 		<?php
 		if ( have_posts() ) :
