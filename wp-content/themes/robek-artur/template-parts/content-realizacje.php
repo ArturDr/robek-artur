@@ -16,7 +16,7 @@
         $image2 = esc_url(get_field('obraz_2'));
         $image3 = esc_url(get_field('obraz_3'));
         $url = esc_url(get_field('url_projektu'));
-		if ( is_singular() ) :
+		if ( is_singular() && !is_front_page()) :
 			the_title( '<div class="row"><div class="col"><h1 class="realizacje-title">', '</h1></div></div>' );?>
 			<div class="row">
 				<div class="col">
@@ -58,7 +58,7 @@
 				</div>
 			</div>
 			<?php
-		else :?>
+		else : ?>
 			<div class="row">
 				<div class="col">
 					<h2 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
