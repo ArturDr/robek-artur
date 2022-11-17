@@ -18,7 +18,8 @@ get_header();
 <div class="container">
     <div class="row">
         <div class="col">
-            Zajawka ogólna o działalności
+            <h1><?php echo esc_html(get_field('tytul_zajawki')); ?></h1>
+            <p><?php echo esc_html(get_field('opis_zajawki')); ?></p>
         </div>
     </div>
 
