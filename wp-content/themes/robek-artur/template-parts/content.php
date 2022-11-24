@@ -18,7 +18,6 @@
         $url = esc_url(get_field('url_projektu'));
 		if ( is_singular() ) :
 			the_title( '<div class="row"><div class="col"><h1 class="realizacje-title">', '</h1></div></div>' );?>
-			</div>
 			<div class="row">
 				<div class="col">
 					<p><?php the_content(); ?></p>

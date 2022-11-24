@@ -16,12 +16,14 @@
 get_header();
 ?>
 <div class="container">
+    <!-- first section -->
     <div class="row">
         <div class="col">
             <h1><?php echo esc_html(get_field('tytul_zajawki')); ?></h1>
             <p><?php echo esc_html(get_field('opis_zajawki')); ?></p>
         </div>
     </div>
+    <!-- end of first section -->
 
     <!-- offer section -->
     <?php $offer = new WP_Query(array(

@@ -8,6 +8,10 @@
  */
 
 ?>
-<div class='container-fluid'>
-<h1> hero section </h2>
+<div class="container-fluid hero-section">
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-12">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/logo-napi.png" alt="Robek Artur">
+        </div>
+    </div>
 </div>

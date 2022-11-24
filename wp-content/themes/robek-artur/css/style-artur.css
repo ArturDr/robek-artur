@@ -1,0 +1,29 @@
+body {
+  font-family: Lato;
+  font-size: 100%; }
+  body .hero-section {
+    margin: 4em 0; }
+  body .artur-nav {
+    background: #D7C800; }
+    body .artur-nav .navbar-toggler {
+      border-color: #07005B; }
+    body .artur-nav .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%287, 0, 91, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+    body .artur-nav .navbar-toggler:focus {
+      box-shadow: none; }
+    body .artur-nav .a-logo {
+      padding: 0; }
+    body .artur-nav ul {
+      margin-left: 2.2em; }
+      body .artur-nav ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: Lato;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #07005B;
+        padding: 0; }
+        body .artur-nav ul li a.current-menu-item {
+          color: white; }
+        body .artur-nav ul li a:hover {
+          color: white; }
