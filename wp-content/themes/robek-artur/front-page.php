@@ -107,7 +107,6 @@ get_header();
                 </div>
             <?php
             endwhile;?>
-        </div>
     </div>
     <div class='row button-row'>
         <div class='col text-center'>
