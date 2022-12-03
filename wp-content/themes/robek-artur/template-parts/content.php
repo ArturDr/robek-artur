@@ -37,7 +37,7 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<a class="btn ar-button" href="<?php the_permalink()?>">Więcej</a>
+					<a class="btn artur-button" href="<?php the_permalink()?>">Więcej</a>
 				</div>
 			</div>
 			<?php

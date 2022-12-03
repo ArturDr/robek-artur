@@ -2,7 +2,13 @@ body {
   font-family: Lato;
   font-size: 100%; }
   body .hero-section {
-    margin: 4em 0; }
+    padding: 4em 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    body .hero-section .row {
+      margin: auto; }
   body .artur-nav {
     background: #D7C800; }
     body .artur-nav .navbar-toggler {
@@ -12,9 +18,17 @@ body {
     body .artur-nav .navbar-toggler:focus {
       box-shadow: none; }
     body .artur-nav .a-logo {
+      margin-right: 0;
+      padding: 0;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: Lato;
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #07005B;
       padding: 0; }
     body .artur-nav ul {
-      margin-left: 2.2em; }
+      margin-left: 1em; }
       body .artur-nav ul li a {
         text-transform: uppercase;
         text-decoration: none;
@@ -27,3 +41,57 @@ body {
           color: white; }
         body .artur-nav ul li a:hover {
           color: white; }
+  body .teaser-section, body .offer-row, body .projects-row, body .about-row {
+    margin-top: 3em;
+    font-family: Lato; }
+    body .teaser-section h1, body .offer-row h1, body .projects-row h1, body .about-row h1 {
+      text-transform: uppercase; }
+  body .teaser-section h1 {
+    margin-bottom: 1em; }
+  body .offer-row {
+    background-color: #00458C;
+    border-radius: 9px;
+    color: white; }
+    body .offer-row .offer-title {
+      margin-bottom: 0.6em;
+      padding-top: 0.6em; }
+    body .offer-row .offer-content {
+      padding: 0 1em; }
+      body .offer-row .offer-content h2 {
+        margin-bottom: 0.6em; }
+  body .about-row .about-title {
+    margin-bottom: 0.6em; }
+  body .project-card {
+    background-color: #00458C;
+    border-radius: 9px;
+    margin-top: 1.5em;
+    color: white; }
+    body .project-card .card-title, body .project-card .card-tech, body .project-card .card-excerpt {
+      padding: 0 1em; }
+    body .project-card .card-title {
+      padding-top: 0.6em; }
+      body .project-card .card-title h2 {
+        text-transform: uppercase; }
+        body .project-card .card-title h2 a {
+          text-decoration: none;
+          color: white; }
+          body .project-card .card-title h2 a:hover {
+            color: #D7C800; }
+  body .artur-button {
+    background-color: #07005B;
+    color: white;
+    text-decoration: none;
+    border-color: #07005B;
+    text-transform: uppercase; }
+    body .artur-button:hover {
+      background-color: #07005B;
+      color: #D7C800;
+      border-color: #D7C800;
+      text-decoration: none; }
+  body .button-row {
+    padding: 1.5em 0; }
+  body .artur-footer {
+    color: #07005B;
+    background-color: #D7C800; }
+    body .artur-footer p {
+      margin-top: 2em; }

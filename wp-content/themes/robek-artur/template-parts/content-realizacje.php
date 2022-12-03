@@ -54,36 +54,38 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<p><a class="btn ar-button" href="<?php echo $url ?>">Link do projektu</a></p>
+					<p><a class="btn artur-button" href="<?php echo $url ?>">Link do projektu</a></p>
 				</div>
 			</div>
 			<?php
 		else : ?>
-			<div class="row">
+		<div class="project-card">
+			<div class="row card-title">
 				<div class="col">
-					<h2 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+					<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row card-tech">
 				<div class="col">
-					<p class="card-tech"><?php echo esc_html__($technologyList) ?></p>
+					<p><?php echo esc_html__($technologyList) ?></p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row card-image">
 				<div class="col">
 					<img class="img-fluid" src="<?php echo esc_url($image1) ?>">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row card-excerpt">
 				<div class="col">
 					<p><?php the_excerpt()?></p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col">
-					<a class="btn ar-button" href="<?php the_permalink()?>">Więcej</a>
+			<div class="row button-row">
+				<div class="col text-center">
+					<a class="btn artur-button" href="<?php the_permalink()?>">Więcej</a>
 				</div>
 			</div>
+		</div>
 			<?php
         endif;
 		?>

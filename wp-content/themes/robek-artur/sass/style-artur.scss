@@ -3,7 +3,14 @@ body {
     font-family: $font;
     font-size: 100%;
     .hero-section {
-        margin: 4em 0;
+        padding: 4em 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/hero-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .row {
+            margin: auto;
+        }
     }
     .artur-nav {
         background: $main-color;
@@ -17,10 +24,18 @@ body {
           box-shadow: none;
         }
         .a-logo {
+            margin-right: 0;
+            padding: 0;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $font;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: $menu-color;
             padding: 0;
         }
         ul {
-            margin-left: 2.2em;
+            margin-left: 1em;
             li {
                 a {
                     text-transform: uppercase;
@@ -38,6 +53,83 @@ body {
                     }
                 }
             }
+        }
+    }
+    .teaser-section, .offer-row, .projects-row, .about-row {
+        margin-top: 3em;
+        font-family: $font;
+        h1 {
+            text-transform: uppercase;
+        }
+    }
+    .teaser-section {
+        h1 {
+            margin-bottom: 1em;
+        }
+    }
+    .offer-row {
+        background-color: $card-color;
+        border-radius: 9px;
+        color: $menu-light-color;
+        .offer-title {
+            margin-bottom: 0.6em;
+            padding-top: 0.6em;
+        }
+        .offer-content {
+            padding: 0 1em;
+            h2 {
+                margin-bottom: 0.6em;
+            }
+        }
+    }
+    .about-row {
+        .about-title {
+            margin-bottom: 0.6em;
+        }
+    }
+    .project-card {
+        background-color: $card-color;
+        border-radius: 9px;
+        margin-top: 1.5em;
+        color: $menu-light-color;
+        .card-title, .card-tech, .card-excerpt {
+            padding: 0 1em;
+        }
+        .card-title {
+            padding-top: 0.6em;
+            h2 {
+                text-transform: uppercase;
+                a {
+                    text-decoration: none;
+                    color: $menu-light-color;
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    .artur-button {
+        background-color: $menu-color;
+        color: $menu-light-color;
+        text-decoration: none;
+        border-color: $menu-color;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $menu-color;
+            color: $main-color;
+            border-color: $main-color;
+            text-decoration: none;
+        }
+    }
+    .button-row {
+        padding: 1.5em 0;
+    }
+    .artur-footer {
+        color: $menu-color;
+        background-color: $main-color;
+        p {
+            margin-top: 2em;
         }
     }
 }

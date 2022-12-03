@@ -52,18 +52,18 @@ get_header();
 					<div class="col-md-3 col-5">
 						<?php if (get_previous_posts_link()) :
 							if (get_post_type() == 'realizacje') : ?>
-								<a class="btn ar-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze realizacje</a>
+								<a class="btn artur-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze realizacje</a>
 							<?php else : ?>
-								<a class="btn ar-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze wpisy</a>
+								<a class="btn artur-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze wpisy</a>
 						<?php endif;
 						endif; ?>
 					</div>
 					<div class="col-md-3 col-5">
 						<?php if (get_next_posts_link()) :
 							if (get_post_type() == 'realizacje') : ?>
-								<a class="btn ar-button" href="<?php echo get_next_posts_page_link(); ?>">Starsze realizacje</a>
+								<a class="btn artur-button" href="<?php echo get_next_posts_page_link(); ?>">Starsze realizacje</a>
 							<?php else : ?>
-								<a class="btn ar-button" href="<?php echo get_next_posts_page_link(); ?>">Starsze wpisy</a>
+								<a class="btn artur-button" href="<?php echo get_next_posts_page_link(); ?>">Starsze wpisy</a>
 						<?php endif;
 						endif; ?>
 					</div>

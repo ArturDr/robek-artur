@@ -20,8 +20,8 @@ get_header();
 
 			the_post_navigation(
 				array(
-					'prev_text' => '<span class="btn ar-btn">%title</span>',
-					'next_text' => '<span class="btn ar-btn">%title</span>',
+					'prev_text' => '<span class="btn artur-button">%title</span>',
+					'next_text' => '<span class="btn artur-button">%title</span>',
 				)
 			);
 
