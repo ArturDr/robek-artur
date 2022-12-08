@@ -78,19 +78,13 @@ body {
           color: white; }
           body .project-card .card-title h2 a:hover {
             color: #D7C800; }
-  body .artur-button {
-    background-color: #07005B;
-    color: white;
-    text-decoration: none;
-    border-color: #07005B;
-    text-transform: uppercase; }
-    body .artur-button:hover {
-      background-color: #07005B;
-      color: #D7C800;
-      border-color: #D7C800;
-      text-decoration: none; }
-  body .button-row {
-    padding: 1.5em 0; }
+  body .tech-row {
+    margin: 1em 0; }
+    body .tech-row .col {
+      padding: 0; }
+      body .tech-row .col p {
+        font-weight: 600;
+        font-size: 1.5em; }
   body .artur-blog-title-row {
     margin-top: 3em;
     text-transform: uppercase; }
@@ -108,8 +102,25 @@ body {
           color: #D7C800; }
   body .artur-time-row p {
     font-size: 0.8em; }
-  body .page-link-row {
+  body .page-link-row, body .artur-post-nav-row {
     margin: 2em 0; }
+  body .artur-post-nav-row .col {
+    padding: 0; }
+    body .artur-post-nav-row .col nav {
+      margin-bottom: 0; }
+  body .artur-button {
+    background-color: #07005B;
+    color: white;
+    text-decoration: none;
+    border-color: #07005B;
+    text-transform: uppercase; }
+    body .artur-button:hover {
+      background-color: #07005B;
+      color: #D7C800;
+      border-color: #D7C800;
+      text-decoration: none; }
+  body .button-row {
+    padding: 1.5em 0; }
   body .artur-footer {
     color: #07005B;
     background-color: #D7C800; }

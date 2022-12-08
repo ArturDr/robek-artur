@@ -17,8 +17,8 @@
         $image3 = esc_url(get_field('obraz_3'));
         $url = esc_url(get_field('url_projektu'));
 		if ( is_singular() && !is_front_page()) :
-			the_title( '<div class="row"><div class="col"><h1 class="realizacje-title">', '</h1></div></div>' );?>
-			<div class="row">
+			the_title( '<div class="row artur-title-row"><div class="col"><h1>', '</h1></div></div>' );?>
+			<div class="row tech-row">
 				<div class="col">
 					<p><?php echo esc_html__($technologyList); ?></p>
 				</div>
