@@ -1,6 +1,7 @@
 body {
   font-family: Lato;
-  font-size: 100%; }
+  font-size: 100%;
+  background-color: #e6e6e6 !important; }
   body .hero-section {
     padding: 4em 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/hero-bg.jpg");
@@ -90,6 +91,25 @@ body {
       text-decoration: none; }
   body .button-row {
     padding: 1.5em 0; }
+  body .artur-blog-title-row {
+    margin-top: 3em;
+    text-transform: uppercase; }
+  body .artur-title-row {
+    margin-top: 2em;
+    border-bottom: 3px solid #07005B; }
+    body .artur-title-row a {
+      text-decoration: none;
+      color: black; }
+      body .artur-title-row a:hover {
+        color: #D7C800; }
+      body .artur-title-row a:visited {
+        color: black; }
+        body .artur-title-row a:visited:hover {
+          color: #D7C800; }
+  body .artur-time-row p {
+    font-size: 0.8em; }
+  body .page-link-row {
+    margin: 2em 0; }
   body .artur-footer {
     color: #07005B;
     background-color: #D7C800; }

@@ -2,6 +2,7 @@
 body {
     font-family: $font;
     font-size: 100%;
+    background-color: $body-color !important;
     .hero-section {
         padding: 4em 0;
         background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/hero-bg.jpg");
@@ -124,6 +125,35 @@ body {
     }
     .button-row {
         padding: 1.5em 0;
+    }
+    .artur-blog-title-row {
+        margin-top: 3em;
+        text-transform: uppercase;
+    }
+    .artur-title-row {
+        margin-top: 2em;
+        border-bottom: 3px solid $menu-color;
+        a {
+            text-decoration: none;
+            color: $text-color;
+            &:hover {
+                color: $main-color;
+            }
+            &:visited {
+                color: $text-color;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    .artur-time-row {
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .page-link-row {
+        margin: 2em 0;
     }
     .artur-footer {
         color: $menu-color;

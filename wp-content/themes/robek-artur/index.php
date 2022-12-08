@@ -18,8 +18,8 @@ get_header();
 <div class="container">
 
 	<main id="primary" class="site-main">
-		<div class="row">
-			<div class="col">
+		<div class="row artur-blog-title-row">
+			<div class="col text-center">
 				<h1>Blog</h1>
 			</div>
 		</div>
@@ -47,8 +47,9 @@ get_header();
 				get_template_part('template-parts/content', get_post_type());
 
 			endwhile;
+
 			if (get_previous_posts_link() || get_next_posts_link()) : ?>
-				<div class="row justify-content-between">
+				<div class="row page-link-row justify-content-between">
 					<div class="col-md-3 col-5">
 						<?php if (get_previous_posts_link()) :
 							if (get_post_type() == 'realizacje') : ?>

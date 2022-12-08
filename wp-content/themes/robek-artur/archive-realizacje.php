@@ -48,7 +48,7 @@ get_header(); ?>
             ?>
             </div>
             <?php if(get_previous_posts_link() || get_next_posts_link()) :?>
-            <div class="row justify-content-between">
+            <div class="row page-link-row justify-content-between">
 				<div class="col-md-3 col-5">
                 <?php if(get_previous_posts_link()) : ?>
 					<a class="btn artur-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze realizacje</a>
