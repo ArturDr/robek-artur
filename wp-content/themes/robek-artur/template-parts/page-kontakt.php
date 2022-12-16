@@ -20,41 +20,38 @@
     $instagram = esc_url(get_field('instagram'));
     $google = esc_url(get_field('google'));
     ?>
-    <div class="row">
-        <div class="col">
+    <div class="row artur-blog-title-row">
+        <div class="col text-center">
             <h1><?php echo get_the_title(); ?></h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row artur-contact-row">
         <div class="col-12 col-md-6">
             <?php echo do_shortcode('[contact-form-7 id="21" title="Formularz kontaktowy"]'); ?>
         </div>
 
-        <div class="col-12 col-md-6">
-            <div class="row">
-                <div class="col">
+        <div class="col-12 col-md-6 artur-contact-col">
+            <div class="row artur-contact-name-row">
+                <div class="col text-center">
                     <h2><?php echo $name; ?></h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <p><?php echo $mail; ?></p>
+            <div class="row artur-stat-mail-row">
+                <div class="col text-center">
+                    <p><a href="mailto:<?php echo $mail; ?>"><?php echo $mail; ?></a></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <p><?php echo $telefon; ?></p>
+            <div class="row artur-phone-row">
+                <div class="col text-center">
+                    <p><a href="tel:+48<?php echo $telefon; ?>"><?php echo $telefon; ?></a></p>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-1">
-                    <p><?php echo $facebook; ?></p>
+            <div class="row justify-content-center artur-social-row">
+                <div class="col-3 col-md-1 text-center">
+                    <a href="<?php echo $facebook; ?>"><i class="fa-brands fa-square-facebook"></i></a>
                 </div>
-                <div class="col-1">
-                    <p><?php echo $instagram; ?></p>
-                </div>
-                <div class="col-1">
-                    <p><?php echo $google; ?></p>
+                <div class="col-3 col-md-1 text-center">
+                    <a href="<?php echo $instagram; ?>"><i class="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
         </div>

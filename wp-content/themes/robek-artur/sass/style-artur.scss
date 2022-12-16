@@ -76,7 +76,7 @@ body {
     }
     .offer-row {
         background-color: $card-color;
-        border-radius: 9px;
+        border-radius: $main-radius;
         color: $menu-light-color;
         .offer-title {
             margin-bottom: 0.6em;
@@ -159,6 +159,196 @@ body {
         }
     }
 
+//contact styles
+
+.artur-contact-row {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    .wpcf7 {
+        font-family: $font;
+        .wpcf7-form {
+            .artur-name-row, .artur-mail-row, .artur-subject-row, .artur-message-row, .artur-quiz-row {
+                margin-bottom: 0.5em;
+                label {
+                    width: 100%;
+                    span {
+                        input, select, textarea {
+                            width: 100%;
+                            padding: 0.3em 0.5em;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        padding: 0.3em 0.5em;
+                    }
+                }
+            }
+            .artur-subject-row {
+                span {
+                    select {
+                        appearance: none;
+                        border-radius: $main-radius;
+                        font-size: 1em;
+                    }
+                }
+                label {
+                    overflow: hidden;
+                    position: relative;
+                    display: block;
+                }
+                label:after {
+                    content: "\f0d7";
+                    font-family: "FontAwesome";
+                    color: $menu-color;
+                    position: absolute;
+                    right: 0;
+                    top: 1.8em;
+                    z-index: 1;
+                    text-align: center;
+                    width: 5%;
+                    height: 100%;
+                    pointer-events: none;
+                }
+            }
+            .artur-agree-row {
+                margin-bottom: 0.5em;
+                .wpcf7-form-control-wrap {
+                    .wpcf7-list-item {
+                        margin-left: 0;
+                    }
+                }
+                label {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 12px;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    span {
+                        color: rgba(0, 0, 0, 0.0);
+                    }
+                }
+                label input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+                .wpcf7-list-item-label {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    border: 1px solid $main-color;
+                    border-radius: $main-radius;
+                }
+                label:hover input ~ .wpcf7-list-item-label {
+                    background-color: $main-color-hover;
+                }
+                label input:checked ~ .wpcf7-list-item-label {
+                    background-color: $main-color;
+                }
+                .wpcf7-list-item-label:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                label input:checked ~ .wpcf7-list-item-label:after {
+                    display: block;
+                }
+                label .wpcf7-list-item-label:after {
+                    left: 6px;
+                    top: 2px;
+                    width: 7px;
+                    height: 10px;
+                    border: solid $menu-light-color;
+                    border-radius: 1px;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+                .wpcf7-not-valid-tip {
+                    margin-top: 1em;
+                    width: 15em;
+                }
+                .accept-text {
+                    padding-left: 0;
+                }
+                p {
+                    margin-top: 0.2em;
+                    margin-bottom: 0;
+                }
+            }
+            .artur-quiz-row {
+                margin-bottom: 0.5em;
+                label {
+                    input {
+                        width: 30%;
+                    }
+                }
+            }
+            .artur-submit-row {
+                input {
+                    width: 100%;
+                }
+            }
+            .wpcf7-spinner {
+                display: none;
+            }
+            .wpcf7-not-valid-tip {
+                font-size: 0.8em;
+                color: $error-color;
+                font-weight: 600;
+            }
+            .wpcf7-response-output {
+                margin: 0;
+                color: $error-color;
+                border: none;
+            }
+        }
+    }
+    .artur-contact-col {
+        .artur-stat-mail-row, .artur-phone-row, .artur-contact-name-row {
+            margin-bottom: 0.5em;
+            p {
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    &:hover {
+                        color: $main-color;
+                    }
+                    &:visited {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+        .artur-contact-name-row {
+            margin-top: 3em;
+        }
+        .artur-social-row {
+            a {
+                i {
+                    font-size: 2em;
+                    color: $menu-color;
+                    &:hover {
+                        color: $main-color;
+                    }
+                    &:visited {
+                        color: $menu-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
 //nav-links styles
 
     .page-link-row, .artur-post-nav-row {
@@ -181,6 +371,7 @@ body {
     text-decoration: none;
     border-color: $menu-color;
     text-transform: uppercase;
+    border-radius: $main-radius;
     &:hover {
         background-color: $menu-color;
         color: $main-color;
