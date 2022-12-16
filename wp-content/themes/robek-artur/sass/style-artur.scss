@@ -320,6 +320,7 @@ body {
                 a {
                     text-decoration: none;
                     color: $text-color;
+                    font-weight: 500;
                     &:hover {
                         color: $main-color;
                     }
@@ -331,6 +332,7 @@ body {
         }
         .artur-contact-name-row {
             margin-top: 3em;
+            color: $menu-color;
         }
         .artur-social-row {
             a {

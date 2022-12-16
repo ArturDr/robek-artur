@@ -216,13 +216,15 @@ body {
       margin-bottom: 0.5em; }
       body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a, body .artur-contact-row .artur-contact-col .artur-phone-row p a, body .artur-contact-row .artur-contact-col .artur-contact-name-row p a {
         text-decoration: none;
-        color: black; }
+        color: black;
+        font-weight: 500; }
         body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:hover, body .artur-contact-row .artur-contact-col .artur-phone-row p a:hover, body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:hover {
           color: #D7C800; }
         body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:visited, body .artur-contact-row .artur-contact-col .artur-phone-row p a:visited, body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:visited {
           color: black; }
     body .artur-contact-row .artur-contact-col .artur-contact-name-row {
-      margin-top: 3em; }
+      margin-top: 3em;
+      color: #07005B; }
     body .artur-contact-row .artur-contact-col .artur-social-row a i {
       font-size: 2em;
       color: #07005B; }
