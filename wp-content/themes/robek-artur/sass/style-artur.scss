@@ -4,11 +4,12 @@ body {
     font-size: 100%;
     background-color: $body-color !important;
 
-//hero & nav styles
+    //hero & nav styles
 
     .hero-section {
         padding: 4em 0;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/hero-bg.jpg");
+        background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),
+            url("../img/hero-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -25,7 +26,7 @@ body {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%287, 0, 91, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
         .navbar-toggler:focus {
-          box-shadow: none;
+            box-shadow: none;
         }
         .a-logo {
             margin-right: 0;
@@ -60,9 +61,12 @@ body {
         }
     }
 
-//front page styles
+    //front page styles
 
-    .teaser-section, .offer-row, .projects-row, .about-row {
+    .teaser-section,
+    .offer-row,
+    .projects-row,
+    .about-row {
         margin-top: 3em;
         font-family: $font;
         h1 {
@@ -95,14 +99,16 @@ body {
         }
     }
 
-//project styles
+    //project styles
 
     .project-card {
         background-color: $card-color;
         border-radius: 9px;
         margin-top: 1.5em;
         color: $menu-light-color;
-        .card-title, .card-tech, .card-excerpt {
+        .card-title,
+        .card-tech,
+        .card-excerpt {
             padding: 0 1em;
         }
         .card-title {
@@ -130,7 +136,7 @@ body {
         }
     }
 
-//blog styles
+    //blog styles
 
     .artur-blog-title-row {
         margin-top: 3em;
@@ -159,201 +165,233 @@ body {
         }
     }
 
-//contact styles
+    //contact styles
 
-.artur-contact-row {
-    margin-top: 2em;
-    margin-bottom: 3em;
-    .wpcf7 {
-        font-family: $font;
-        .wpcf7-form {
-            .artur-name-row, .artur-mail-row, .artur-subject-row, .artur-message-row, .artur-quiz-row {
-                margin-bottom: 0.5em;
-                label {
-                    width: 100%;
-                    span {
-                        input, select, textarea {
+    .artur-contact-row {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        .wpcf7 {
+            font-family: $font;
+            .wpcf7-form {
+                .artur-name-row,
+                .artur-mail-row,
+                .artur-subject-row,
+                .artur-message-row,
+                .artur-quiz-row {
+                    margin-bottom: 0.5em;
+                    label {
+                        width: 100%;
+                        span {
+                            input,
+                            select,
+                            textarea {
+                                width: 100%;
+                                padding: 0.3em 0.5em;
+                            }
+                        }
+                        input {
                             width: 100%;
                             padding: 0.3em 0.5em;
                         }
                     }
+                }
+                .artur-subject-row {
+                    span {
+                        select {
+                            appearance: none;
+                            border-radius: $main-radius;
+                            font-size: 1em;
+                        }
+                    }
+                    label {
+                        overflow: hidden;
+                        position: relative;
+                        display: block;
+                    }
+                    label:after {
+                        content: "\f0d7";
+                        font-family: "FontAwesome";
+                        color: $menu-color;
+                        position: absolute;
+                        right: 0;
+                        top: 1.8em;
+                        z-index: 1;
+                        text-align: center;
+                        width: 5%;
+                        height: 100%;
+                        pointer-events: none;
+                    }
+                }
+                .artur-agree-row {
+                    margin-bottom: 0.5em;
+                    .wpcf7-form-control-wrap {
+                        .wpcf7-list-item {
+                            margin-left: 0;
+                        }
+                    }
+                    label {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        span {
+                            color: rgba(0, 0, 0, 0);
+                        }
+                    }
+                    label input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    .wpcf7-list-item-label {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 20px;
+                        width: 20px;
+                        border: 1px solid $main-color;
+                        border-radius: $main-radius;
+                    }
+                    label:hover input ~ .wpcf7-list-item-label {
+                        background-color: $main-color-hover;
+                    }
+                    label input:checked ~ .wpcf7-list-item-label {
+                        background-color: $main-color;
+                    }
+                    .wpcf7-list-item-label:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    label input:checked ~ .wpcf7-list-item-label:after {
+                        display: block;
+                    }
+                    label .wpcf7-list-item-label:after {
+                        left: 6px;
+                        top: 2px;
+                        width: 7px;
+                        height: 10px;
+                        border: solid $menu-light-color;
+                        border-radius: 1px;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                    .wpcf7-not-valid-tip {
+                        margin-top: 1em;
+                        width: 15em;
+                    }
+                    .accept-text {
+                        padding-left: 0;
+                    }
+                    p {
+                        margin-top: 0.2em;
+                        margin-bottom: 0;
+                    }
+                }
+                .artur-quiz-row {
+                    margin-bottom: 0.5em;
+                    label {
+                        input {
+                            width: 30%;
+                        }
+                    }
+                }
+                .artur-submit-row {
                     input {
                         width: 100%;
-                        padding: 0.3em 0.5em;
                     }
                 }
-            }
-            .artur-subject-row {
-                span {
-                    select {
-                        appearance: none;
-                        border-radius: $main-radius;
-                        font-size: 1em;
-                    }
-                }
-                label {
-                    overflow: hidden;
-                    position: relative;
-                    display: block;
-                }
-                label:after {
-                    content: "\f0d7";
-                    font-family: "FontAwesome";
-                    color: $menu-color;
-                    position: absolute;
-                    right: 0;
-                    top: 1.8em;
-                    z-index: 1;
-                    text-align: center;
-                    width: 5%;
-                    height: 100%;
-                    pointer-events: none;
-                }
-            }
-            .artur-agree-row {
-                margin-bottom: 0.5em;
-                .wpcf7-form-control-wrap {
-                    .wpcf7-list-item {
-                        margin-left: 0;
-                    }
-                }
-                label {
-                    display: block;
-                    position: relative;
-                    padding-left: 35px;
-                    margin-bottom: 12px;
-                    cursor: pointer;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-                    span {
-                        color: rgba(0, 0, 0, 0.0);
-                    }
-                }
-                label input {
-                    position: absolute;
-                    opacity: 0;
-                    cursor: pointer;
-                    height: 0;
-                    width: 0;
-                }
-                .wpcf7-list-item-label {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 20px;
-                    width: 20px;
-                    border: 1px solid $main-color;
-                    border-radius: $main-radius;
-                }
-                label:hover input ~ .wpcf7-list-item-label {
-                    background-color: $main-color-hover;
-                }
-                label input:checked ~ .wpcf7-list-item-label {
-                    background-color: $main-color;
-                }
-                .wpcf7-list-item-label:after {
-                    content: "";
-                    position: absolute;
+                .wpcf7-spinner {
                     display: none;
                 }
-                label input:checked ~ .wpcf7-list-item-label:after {
-                    display: block;
-                }
-                label .wpcf7-list-item-label:after {
-                    left: 6px;
-                    top: 2px;
-                    width: 7px;
-                    height: 10px;
-                    border: solid $menu-light-color;
-                    border-radius: 1px;
-                    border-width: 0 3px 3px 0;
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                }
                 .wpcf7-not-valid-tip {
-                    margin-top: 1em;
-                    width: 15em;
+                    font-size: 0.8em;
+                    color: $error-color;
+                    font-weight: 600;
                 }
-                .accept-text {
-                    padding-left: 0;
-                }
-                p {
-                    margin-top: 0.2em;
-                    margin-bottom: 0;
+                .wpcf7-response-output {
+                    margin: 0;
+                    color: $error-color;
+                    border: none;
                 }
             }
-            .artur-quiz-row {
+        }
+        .artur-contact-col {
+            font-family: $font;
+            .artur-stat-mail-row,
+            .artur-phone-row,
+            .artur-contact-name-row {
                 margin-bottom: 0.5em;
-                label {
-                    input {
-                        width: 30%;
-                    }
-                }
-            }
-            .artur-submit-row {
-                input {
-                    width: 100%;
-                }
-            }
-            .wpcf7-spinner {
-                display: none;
-            }
-            .wpcf7-not-valid-tip {
-                font-size: 0.8em;
-                color: $error-color;
-                font-weight: 600;
-            }
-            .wpcf7-response-output {
-                margin: 0;
-                color: $error-color;
-                border: none;
-            }
-        }
-    }
-    .artur-contact-col {
-        .artur-stat-mail-row, .artur-phone-row, .artur-contact-name-row {
-            margin-bottom: 0.5em;
-            p {
-                a {
-                    text-decoration: none;
-                    color: $text-color;
-                    font-weight: 500;
-                    &:hover {
-                        color: $main-color;
-                    }
-                    &:visited {
+                p {
+                    a {
+                        text-decoration: none;
                         color: $text-color;
+                        font-weight: 500;
+                        &:hover {
+                            color: $main-color;
+                        }
+                        &:visited {
+                            color: $text-color;
+                        }
                     }
                 }
             }
-        }
-        .artur-contact-name-row {
-            margin-top: 3em;
-            color: $menu-color;
-        }
-        .artur-social-row {
-            a {
-                i {
-                    font-size: 2em;
-                    color: $menu-color;
-                    &:hover {
-                        color: $main-color;
-                    }
-                    &:visited {
+            .artur-contact-name-row {
+                margin-top: 3em;
+                color: $menu-color;
+            }
+            .artur-social-row {
+                a {
+                    i {
+                        font-size: 2em;
                         color: $menu-color;
+                        &:hover {
+                            color: $main-color;
+                        }
+                        &:visited {
+                            color: $menu-color;
+                        }
                     }
                 }
             }
         }
     }
-}
 
-//nav-links styles
+    //offer styles
 
-    .page-link-row, .artur-post-nav-row {
+    .artur-offer-title-row, .artur-offer-description-row, .artur-price-offer-row {
+        margin-bottom: 0.5em;
+        font-family: $font;
+    }
+    .artur-offer-title-row, .artur-price-offer-row {
+        color: $menu-color;
+    }
+
+    .artur-offer-description-row {
+        color: $text-color;
+    }
+
+    //pages style
+
+    .artur-content-row {
+        margin-bottom: 2em;
+        margin-top: 2em;
+        font-family: $font;
+    }
+
+    //nav-links styles
+
+    .page-link-row,
+    .artur-post-nav-row {
         margin: 2em 0;
     }
     .artur-post-nav-row {
@@ -365,27 +403,27 @@ body {
         }
     }
 
-//button styles
+    //button styles
 
-.artur-button {
-    background-color: $menu-color;
-    color: $menu-light-color;
-    text-decoration: none;
-    border-color: $menu-color;
-    text-transform: uppercase;
-    border-radius: $main-radius;
-    &:hover {
+    .artur-button {
         background-color: $menu-color;
-        color: $main-color;
-        border-color: $main-color;
+        color: $menu-light-color;
         text-decoration: none;
+        border-color: $menu-color;
+        text-transform: uppercase;
+        border-radius: $main-radius;
+        &:hover {
+            background-color: $menu-color;
+            color: $main-color;
+            border-color: $main-color;
+            text-decoration: none;
+        }
     }
-}
-.button-row {
-    padding: 1.5em 0;
-}
+    .button-row {
+        padding: 1.5em 0;
+    }
 
-//footer style
+    //footer style
 
     .artur-footer {
         color: $menu-color;

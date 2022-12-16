@@ -10,21 +10,19 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<div class="row artur-blog-title-row">
+		<div class="col text-center">
+			<?php the_title( '<h1>', '</h1>' ); ?>
+		</div>
+	</div>
 
 
-	<div class="entry-content">
-		<?php
-		the_content();
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'robek-artur' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+	<div class="row artur-content-row">
+		<div class="col">
+			<?php
+			the_content();
+			?>
+		</div>
+	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

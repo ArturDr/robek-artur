@@ -42,10 +42,16 @@ body {
           color: white; }
         body .artur-nav ul li a:hover {
           color: white; }
-  body .teaser-section, body .offer-row, body .projects-row, body .about-row {
+  body .teaser-section,
+  body .offer-row,
+  body .projects-row,
+  body .about-row {
     margin-top: 3em;
     font-family: Lato; }
-    body .teaser-section h1, body .offer-row h1, body .projects-row h1, body .about-row h1 {
+    body .teaser-section h1,
+    body .offer-row h1,
+    body .projects-row h1,
+    body .about-row h1 {
       text-transform: uppercase; }
   body .teaser-section h1 {
     margin-bottom: 1em; }
@@ -67,7 +73,9 @@ body {
     border-radius: 9px;
     margin-top: 1.5em;
     color: white; }
-    body .project-card .card-title, body .project-card .card-tech, body .project-card .card-excerpt {
+    body .project-card .card-title,
+    body .project-card .card-tech,
+    body .project-card .card-excerpt {
       padding: 0 1em; }
     body .project-card .card-title {
       padding-top: 0.6em; }
@@ -107,14 +115,40 @@ body {
     margin-bottom: 3em; }
     body .artur-contact-row .wpcf7 {
       font-family: Lato; }
-      body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row, body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row, body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row, body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row, body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row {
+      body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row,
+      body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row,
+      body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row,
+      body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row,
+      body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row {
         margin-bottom: 0.5em; }
-        body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label, body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label, body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label, body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label, body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label {
+        body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label,
+        body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label,
+        body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label,
+        body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label,
+        body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label {
           width: 100%; }
-          body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label span input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label span select, body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label span textarea, body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label span input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label span select, body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label span textarea, body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label span input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label span select, body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label span textarea, body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label span input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label span select, body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label span textarea, body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label span input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label span select, body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label span textarea {
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label span input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label span select,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label span textarea,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label span input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label span select,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label span textarea,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label span input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label span select,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label span textarea,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label span input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label span select,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label span textarea,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label span input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label span select,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label span textarea {
             width: 100%;
             padding: 0.3em 0.5em; }
-          body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label input, body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label input {
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-name-row label input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-mail-row label input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row label input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-message-row label input,
+          body .artur-contact-row .wpcf7 .wpcf7-form .artur-quiz-row label input {
             width: 100%;
             padding: 0.3em 0.5em; }
       body .artur-contact-row .wpcf7 .wpcf7-form .artur-subject-row span select {
@@ -212,27 +246,49 @@ body {
         margin: 0;
         color: #380074;
         border: none; }
-    body .artur-contact-row .artur-contact-col .artur-stat-mail-row, body .artur-contact-row .artur-contact-col .artur-phone-row, body .artur-contact-row .artur-contact-col .artur-contact-name-row {
-      margin-bottom: 0.5em; }
-      body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a, body .artur-contact-row .artur-contact-col .artur-phone-row p a, body .artur-contact-row .artur-contact-col .artur-contact-name-row p a {
-        text-decoration: none;
-        color: black;
-        font-weight: 500; }
-        body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:hover, body .artur-contact-row .artur-contact-col .artur-phone-row p a:hover, body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:hover {
-          color: #D7C800; }
-        body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:visited, body .artur-contact-row .artur-contact-col .artur-phone-row p a:visited, body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:visited {
-          color: black; }
-    body .artur-contact-row .artur-contact-col .artur-contact-name-row {
-      margin-top: 3em;
-      color: #07005B; }
-    body .artur-contact-row .artur-contact-col .artur-social-row a i {
-      font-size: 2em;
-      color: #07005B; }
-      body .artur-contact-row .artur-contact-col .artur-social-row a i:hover {
-        color: #D7C800; }
-      body .artur-contact-row .artur-contact-col .artur-social-row a i:visited {
+    body .artur-contact-row .artur-contact-col {
+      font-family: Lato; }
+      body .artur-contact-row .artur-contact-col .artur-stat-mail-row,
+      body .artur-contact-row .artur-contact-col .artur-phone-row,
+      body .artur-contact-row .artur-contact-col .artur-contact-name-row {
+        margin-bottom: 0.5em; }
+        body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a,
+        body .artur-contact-row .artur-contact-col .artur-phone-row p a,
+        body .artur-contact-row .artur-contact-col .artur-contact-name-row p a {
+          text-decoration: none;
+          color: black;
+          font-weight: 500; }
+          body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:hover,
+          body .artur-contact-row .artur-contact-col .artur-phone-row p a:hover,
+          body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:hover {
+            color: #D7C800; }
+          body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:visited,
+          body .artur-contact-row .artur-contact-col .artur-phone-row p a:visited,
+          body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:visited {
+            color: black; }
+      body .artur-contact-row .artur-contact-col .artur-contact-name-row {
+        margin-top: 3em;
         color: #07005B; }
-  body .page-link-row, body .artur-post-nav-row {
+      body .artur-contact-row .artur-contact-col .artur-social-row a i {
+        font-size: 2em;
+        color: #07005B; }
+        body .artur-contact-row .artur-contact-col .artur-social-row a i:hover {
+          color: #D7C800; }
+        body .artur-contact-row .artur-contact-col .artur-social-row a i:visited {
+          color: #07005B; }
+  body .artur-offer-title-row, body .artur-offer-description-row, body .artur-price-offer-row {
+    margin-bottom: 0.5em;
+    font-family: Lato; }
+  body .artur-offer-title-row, body .artur-price-offer-row {
+    color: #07005B; }
+  body .artur-offer-description-row {
+    color: black; }
+  body .artur-content-row {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-family: Lato; }
+  body .page-link-row,
+  body .artur-post-nav-row {
     margin: 2em 0; }
   body .artur-post-nav-row .col {
     padding: 0; }

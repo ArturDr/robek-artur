@@ -10,8 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="row">
-    <div class="col">
+<div class="row artur-blog-title-row">
+    <div class="col text-center">
         <h1><?php echo get_the_title(); ?></h1>
     </div>
 </div>
@@ -23,17 +23,17 @@
 		$description = esc_html(get_field('opis_'.$i));
 		$price = esc_html(get_field('cena_'.$i));
 		?>
-        <div class="row">
+        <div class="row artur-offer-title-row">
             <div class="col">
                 <h2><?php echo $title; ?></h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row artur-offer-description-row">
             <div class="col">
                 <p><?php echo $description; ?></p>
             </div>
         </div>
-        <div class="row">
+        <div class="row artur-price-offer-row">
             <div class="col">
                 <p><?php echo $price; ?></p>
             </div>
