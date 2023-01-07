@@ -14,7 +14,7 @@ get_header(); ?>
 
 <?php if (have_posts()) : ?>
 
-    <div class="container">
+    <div class="container blog-con">
     <div class="row artur-blog-title-row">
         <div class="col text-center">
             <h1>Realizacje</h1>

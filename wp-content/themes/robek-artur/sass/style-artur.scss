@@ -61,6 +61,12 @@ body {
         }
     }
 
+    //container blog site
+
+    .blog-con {
+        margin-bottom: 1em;
+    }
+
     //front page styles
 
     .teaser-section,
@@ -113,6 +119,7 @@ body {
         }
         .card-title {
             padding-top: 0.6em;
+            height: 6em;
             h2 {
                 text-transform: uppercase;
                 a {
@@ -124,6 +131,12 @@ body {
                 }
             }
         }
+    }
+    .card-tech {
+        height: 4em;
+    }
+    .card-excerpt {
+        height: 8em;
     }
     .tech-row {
         margin: 1em 0;

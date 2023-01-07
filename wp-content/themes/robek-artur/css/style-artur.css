@@ -42,6 +42,8 @@ body {
           color: white; }
         body .artur-nav ul li a:hover {
           color: white; }
+  body .blog-con {
+    margin-bottom: 1em; }
   body .teaser-section,
   body .offer-row,
   body .projects-row,
@@ -78,7 +80,8 @@ body {
     body .project-card .card-excerpt {
       padding: 0 1em; }
     body .project-card .card-title {
-      padding-top: 0.6em; }
+      padding-top: 0.6em;
+      height: 6em; }
       body .project-card .card-title h2 {
         text-transform: uppercase; }
         body .project-card .card-title h2 a {
@@ -86,6 +89,10 @@ body {
           color: white; }
           body .project-card .card-title h2 a:hover {
             color: #D7C800; }
+  body .card-tech {
+    height: 4em; }
+  body .card-excerpt {
+    height: 8em; }
   body .tech-row {
     margin: 1em 0; }
     body .tech-row .col {

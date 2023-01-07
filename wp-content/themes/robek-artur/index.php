@@ -15,7 +15,7 @@
 
 get_header();
 ?>
-<div class="container">
+<div class="container blog-con">
 
 	<main id="primary" class="site-main">
 		<div class="row artur-blog-title-row">
