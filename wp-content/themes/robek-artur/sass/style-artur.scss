@@ -381,16 +381,23 @@ body {
 
     //offer styles
 
-    .artur-offer-title-row, .artur-offer-description-row, .artur-price-offer-row {
-        margin-bottom: 0.5em;
-        font-family: $font;
-    }
-    .artur-offer-title-row, .artur-price-offer-row {
-        color: $menu-color;
-    }
+    .artur-offer-section {
+        margin-top: 2em;
+        .artur-offer-title-row,
+        .artur-offer-description-row,
+        .artur-price-offer-row,
+        .artur-offer-info {
+            margin-bottom: 0.5em;
+            font-family: $font;
+        }
+        .artur-offer-title-row,
+        .artur-price-offer-row {
+            color: $menu-color;
+        }
 
-    .artur-offer-description-row {
-        color: $text-color;
+        .artur-offer-description-row {
+            color: $text-color;
+        }
     }
 
     //pages style

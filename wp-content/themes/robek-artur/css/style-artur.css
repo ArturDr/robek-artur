@@ -283,13 +283,19 @@ body {
           color: #D7C800; }
         body .artur-contact-row .artur-contact-col .artur-social-row a i:visited {
           color: #07005B; }
-  body .artur-offer-title-row, body .artur-offer-description-row, body .artur-price-offer-row {
-    margin-bottom: 0.5em;
-    font-family: Lato; }
-  body .artur-offer-title-row, body .artur-price-offer-row {
-    color: #07005B; }
-  body .artur-offer-description-row {
-    color: black; }
+  body .artur-offer-section {
+    margin-top: 2em; }
+    body .artur-offer-section .artur-offer-title-row,
+    body .artur-offer-section .artur-offer-description-row,
+    body .artur-offer-section .artur-price-offer-row,
+    body .artur-offer-section .artur-offer-info {
+      margin-bottom: 0.5em;
+      font-family: Lato; }
+    body .artur-offer-section .artur-offer-title-row,
+    body .artur-offer-section .artur-price-offer-row {
+      color: #07005B; }
+    body .artur-offer-section .artur-offer-description-row {
+      color: black; }
   body .artur-content-row {
     margin-bottom: 2em;
     margin-top: 2em;

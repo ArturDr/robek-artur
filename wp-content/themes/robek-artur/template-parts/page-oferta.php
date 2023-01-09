@@ -15,6 +15,14 @@
         <h1><?php echo get_the_title(); ?></h1>
     </div>
 </div>
+<div class="artur-offer-section">
+    <div class="row artur-offer-info">
+        <div class="col">
+            <?php
+            the_content();
+            ?>
+        </div>
+    </div>
 <?php
 
     $i = 1;
@@ -43,4 +51,5 @@
 	endwhile;
 
 ?>
+</div>
 </article><!-- #post-<?php the_ID(); ?> -->

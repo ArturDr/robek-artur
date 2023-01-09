@@ -68,7 +68,7 @@ get_header();
         </div>
         <div class="row about-content">
             <div class="col">
-                <p><?php echo esc_html(wp_trim_words(get_the_content(), 30, '')); ?></p>
+                <p><?php echo esc_html(wp_trim_words(get_the_content(), 42, '')); ?></p>
             </div>
         </div>
         <div class="row button-row">
