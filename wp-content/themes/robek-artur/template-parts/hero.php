@@ -11,7 +11,7 @@
 <div class="container-fluid hero-section">
     <div class="row justify-content-center">
         <div class="col-md-4 col-12">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/logo-napi.png" alt="Robek Artur">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/logo-napi.webp" alt="Robek Artur" height="290" width="413">
         </div>
     </div>
 </div>

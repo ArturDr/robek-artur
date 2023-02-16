@@ -29,7 +29,7 @@
 	<nav class="navbar sticky-top navbar-expand-md artur-nav">
 		<div class="container-fluid">
 			<a class="navbar-brand a-logo" href="<?php echo site_url('strona-glowna'); ?>">
-				<!--<img src="<?php //echo get_template_directory_uri(); ?>/img/logo-menu.png" alt="Robek Artur">-->Strona główna
+				<!--<img src="<?php //echo get_template_directory_uri(); ?>/img/logo-menu.webp" alt="Robek Artur">-->Strona główna
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>

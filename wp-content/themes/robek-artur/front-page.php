@@ -18,9 +18,12 @@ get_header();
 <div class="container">
     <!-- first section -->
     <div class="row teaser-section">
-        <div class="col text-center">
+        <div class="col-12 col-md-6 align-self-center text-center">
             <h1><?php echo esc_html(get_field('tytul_zajawki')); ?></h1>
             <p><?php echo esc_html(get_field('opis_zajawki')); ?></p>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <img class="class-fluid" src="<?php echo get_template_directory_uri(); ?>\img\twarz.webp" height="365" width="240" alt="Robek Artur">
         </div>
     </div>
     <!-- end of first section -->

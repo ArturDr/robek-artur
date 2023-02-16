@@ -12,9 +12,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php
         $technologyList = esc_html(get_field('technology'));
-        $image1 = esc_url(get_field('obraz_1'));
-        $image2 = esc_url(get_field('obraz_2'));
-        $image3 = esc_url(get_field('obraz_3'));
+        $image1 = get_field('obraz_1');
+        $image2 = get_field('obraz_2');
+        $image3 = get_field('obraz_3');
         $url = esc_url(get_field('url_projektu'));
 		if ( is_singular() && !is_front_page()) :
 			the_title( '<div class="row artur-title-row"><div class="col"><h1>', '</h1></div></div>' );?>
@@ -26,24 +26,24 @@
 			<div class="row">
 			<?php if($image1 && !$image2 && !$image3) :  ?>
 					<div class="col">
-						<img class="img-fluid" src="<?php echo $image1 ?>">
+						<img class="img-fluid" src="<?php echo $image1['url'] ?>" height="675" width="608" alt="<?php echo $image1['alt']; ?>">
 					</div>
 			<?php elseif($image1 && $image2 && !$image3) :  ?>
 					<div class="col-md-6 col-12">
-						<img class="img-fluid" src="<?php echo $image1 ?>">
+						<img class="img-fluid" src="<?php echo $image1['url'] ?>" height="675" width="608" alt="<?php echo $image1['alt']; ?>">
 					</div>
 					<div class="col-md-6 col-12">
-						<img class="img-fluid" src="<?php echo $image2 ?>">
+						<img class="img-fluid" src="<?php echo $image2['url'] ?>" height="675" width="608" alt="<?php echo $image2['alt']; ?>">
 					</div>
 			<?php elseif($image1 && $image2 && $image3) :  ?>
 				<div class="col-md-4 col-12">
-						<img class="img-fluid" src="<?php echo $image1 ?>">
+						<img class="img-fluid" src="<?php echo $image1['url'] ?>" height="675" width="608" alt="<?php echo $image1['alt']; ?>">
 					</div>
 					<div class="col-md-4 col-12">
-						<img class="img-fluid" src="<?php echo $image2 ?>">
+						<img class="img-fluid" src="<?php echo $image2['url'] ?>" height="675" width="608" alt="<?php echo $image2['alt']; ?>">
 					</div>
 					<div class="col-md-4 col-12">
-						<img class="img-fluid" src="<?php echo $image3 ?>">
+						<img class="img-fluid" src="<?php echo $image3['url'] ?>" height="675" width="608" alt="<?php echo $image3['alt']; ?>">
 					</div>
 			<?php endif;?>
 			</div>
@@ -72,7 +72,7 @@
 			</div>
 			<div class="row card-image">
 				<div class="col">
-					<img class="img-fluid" src="<?php echo esc_url($image1) ?>">
+					<img class="img-fluid" src="<?php echo esc_url($image1['url']) ?>" height="675" width="608" alt="<?php echo esc_attr($image1['alt']); ?>">
 				</div>
 			</div>
 			<div class="row card-excerpt">
