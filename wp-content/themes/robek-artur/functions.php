@@ -138,14 +138,14 @@ add_action( 'widgets_init', 'robek_artur_widgets_init' );
  * Enqueue scripts and styles.
  */
 function robek_artur_scripts() {
+	wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' );
+	wp_enqueue_style( 'icon-awsome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 	wp_enqueue_style( 'robek-artur-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'style-artur', get_template_directory_uri() . '/css/style-artur.css');
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap-dist/css/bootstrap.min.css' );
-	wp_enqueue_style( 'icon-awsome', get_template_directory_uri(). '/fontawesome-free-6.2.0-web/css/all.css');
 	wp_style_add_data( 'robek-artur-style', 'rtl', 'replace' );
 
+	wp_enqueue_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script( 'robek-artur-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap-dist/js/bootstrap.bundle.min.js', array(), _S_VERSION, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
