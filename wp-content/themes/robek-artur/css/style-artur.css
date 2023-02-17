@@ -40,7 +40,7 @@ body {
         padding: 0; }
         body .artur-nav ul li a.current-menu-item {
           color: white; }
-        body .artur-nav ul li a:hover {
+        body .artur-nav ul li a:hover, body .artur-nav ul li a:focus {
           color: white; }
   body .blog-con {
     margin-bottom: 1em; }
@@ -55,7 +55,7 @@ body {
     body .projects-row h1,
     body .about-row h1 {
       text-transform: uppercase; }
-  body .teaser-section h1 {
+  body .teaser-section h1, body .teaser-section img {
     margin-bottom: 1em; }
   body .offer-row {
     background-color: #00458C;
@@ -265,9 +265,11 @@ body {
           text-decoration: none;
           color: black;
           font-weight: 500; }
-          body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:hover,
+          body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:hover, body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:focus,
           body .artur-contact-row .artur-contact-col .artur-phone-row p a:hover,
-          body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:hover {
+          body .artur-contact-row .artur-contact-col .artur-phone-row p a:focus,
+          body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:hover,
+          body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:focus {
             color: #D7C800; }
           body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:visited,
           body .artur-contact-row .artur-contact-col .artur-phone-row p a:visited,
@@ -279,7 +281,7 @@ body {
       body .artur-contact-row .artur-contact-col .artur-social-row a i {
         font-size: 2em;
         color: #07005B; }
-        body .artur-contact-row .artur-contact-col .artur-social-row a i:hover {
+        body .artur-contact-row .artur-contact-col .artur-social-row a i:hover, body .artur-contact-row .artur-contact-col .artur-social-row a i:focus {
           color: #D7C800; }
         body .artur-contact-row .artur-contact-col .artur-social-row a i:visited {
           color: #07005B; }

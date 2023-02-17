@@ -23,7 +23,7 @@ get_header();
             <p><?php echo esc_html(get_field('opis_zajawki')); ?></p>
         </div>
         <div class="col-12 col-md-6 text-center">
-            <img class="class-fluid" src="<?php echo get_template_directory_uri(); ?>\img\twarz.webp" height="365" width="240" alt="Robek Artur">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>\img\twarz.webp" height="365" width="240" alt="Robek Artur">
         </div>
     </div>
     <!-- end of first section -->

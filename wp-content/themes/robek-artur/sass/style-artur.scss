@@ -53,7 +53,7 @@ body {
                     &.current-menu-item {
                         color: $menu-light-color;
                     }
-                    &:hover {
+                    &:hover, &:focus {
                         color: $menu-light-color;
                     }
                 }
@@ -80,7 +80,7 @@ body {
         }
     }
     .teaser-section {
-        h1 {
+        h1, img {
             margin-bottom: 1em;
         }
     }
@@ -349,7 +349,7 @@ body {
                         text-decoration: none;
                         color: $text-color;
                         font-weight: 500;
-                        &:hover {
+                        &:hover, &:focus {
                             color: $main-color;
                         }
                         &:visited {
@@ -367,7 +367,7 @@ body {
                     i {
                         font-size: 2em;
                         color: $menu-color;
-                        &:hover {
+                        &:hover, &:focus {
                             color: $main-color;
                         }
                         &:visited {
