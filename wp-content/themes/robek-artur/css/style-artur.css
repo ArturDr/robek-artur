@@ -87,7 +87,7 @@ body {
         body .project-card .card-title h2 a {
           text-decoration: none;
           color: white; }
-          body .project-card .card-title h2 a:hover {
+          body .project-card .card-title h2 a:hover, body .project-card .card-title h2 a:focus {
             color: #D7C800; }
   body .card-tech {
     height: 4em; }
@@ -314,7 +314,7 @@ body {
     border-color: #07005B;
     text-transform: uppercase;
     border-radius: 3px; }
-    body .artur-button:hover {
+    body .artur-button:hover, body .artur-button:focus {
       background-color: #07005B;
       color: #D7C800;
       border-color: #D7C800;

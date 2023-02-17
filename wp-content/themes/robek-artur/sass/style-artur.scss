@@ -125,7 +125,7 @@ body {
                 a {
                     text-decoration: none;
                     color: $menu-light-color;
-                    &:hover {
+                    &:hover, &:focus {
                         color: $main-color;
                     }
                 }
@@ -432,7 +432,7 @@ body {
         border-color: $menu-color;
         text-transform: uppercase;
         border-radius: $main-radius;
-        &:hover {
+        &:hover, &:focus {
             background-color: $menu-color;
             color: $main-color;
             border-color: $main-color;
