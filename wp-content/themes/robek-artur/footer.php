@@ -18,6 +18,11 @@
 					<p>Robek Artur &copy <?php echo date("Y");?></p>
 				</div>
 			</div>
+			<div class="row text-center artur-privacy-policy">
+				<div class="col">
+					<p><a href="<?php echo site_url('polityka-prywatnosci'); ?>">Polityka prywatności</a></p>
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -328,3 +328,11 @@ body {
     background-color: #D7C800; }
     body .artur-footer p {
       margin-top: 2em; }
+    body .artur-footer .artur-privacy-policy p a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500; }
+      body .artur-footer .artur-privacy-policy p a:hover, body .artur-footer .artur-privacy-policy p a:focus {
+        color: white; }
+      body .artur-footer .artur-privacy-policy p a:visited {
+        color: black; }
