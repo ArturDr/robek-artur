@@ -161,12 +161,12 @@ body {
         a {
             text-decoration: none;
             color: $text-color;
-            &:hover {
+            &:hover, &:focus {
                 color: $main-color;
             }
             &:visited {
                 color: $text-color;
-                &:hover {
+                &:hover, &focus {
                     color: $main-color;
                 }
             }
@@ -180,6 +180,9 @@ body {
 
     //contact styles
 
+    .artur-contact-description {
+        font-family: $font;
+    }
     .artur-contact-row {
         margin-top: 2em;
         margin-bottom: 3em;
@@ -354,6 +357,9 @@ body {
                         }
                         &:visited {
                             color: $text-color;
+                            &:hover, &:focus {
+                                color: $main-color;
+                            }
                         }
                     }
                 }
@@ -372,6 +378,9 @@ body {
                         }
                         &:visited {
                             color: $menu-color;
+                            &:hover, &:focus {
+                                color: $main-color;
+                            }
                         }
                     }
                 }
@@ -461,6 +470,9 @@ body {
                     }
                     &:visited {
                         color: $text-color;
+                        &:hover, &:focus {
+                            color: $menu-light-color;
+                        }
                     }
                 }
             }

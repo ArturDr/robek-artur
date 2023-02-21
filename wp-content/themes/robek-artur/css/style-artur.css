@@ -109,14 +109,16 @@ body {
     body .artur-title-row a {
       text-decoration: none;
       color: black; }
-      body .artur-title-row a:hover {
+      body .artur-title-row a:hover, body .artur-title-row a:focus {
         color: #D7C800; }
       body .artur-title-row a:visited {
         color: black; }
-        body .artur-title-row a:visited:hover {
+        body .artur-title-row a:visited:hover, body .artur-title-row a:visitedfocus {
           color: #D7C800; }
   body .artur-time-row p {
     font-size: 0.8em; }
+  body .artur-contact-description {
+    font-family: Lato; }
   body .artur-contact-row {
     margin-top: 2em;
     margin-bottom: 3em; }
@@ -275,6 +277,12 @@ body {
           body .artur-contact-row .artur-contact-col .artur-phone-row p a:visited,
           body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:visited {
             color: black; }
+            body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:visited:hover, body .artur-contact-row .artur-contact-col .artur-stat-mail-row p a:visited:focus,
+            body .artur-contact-row .artur-contact-col .artur-phone-row p a:visited:hover,
+            body .artur-contact-row .artur-contact-col .artur-phone-row p a:visited:focus,
+            body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:visited:hover,
+            body .artur-contact-row .artur-contact-col .artur-contact-name-row p a:visited:focus {
+              color: #D7C800; }
       body .artur-contact-row .artur-contact-col .artur-contact-name-row {
         margin-top: 3em;
         color: #07005B; }
@@ -285,6 +293,8 @@ body {
           color: #D7C800; }
         body .artur-contact-row .artur-contact-col .artur-social-row a i:visited {
           color: #07005B; }
+          body .artur-contact-row .artur-contact-col .artur-social-row a i:visited:hover, body .artur-contact-row .artur-contact-col .artur-social-row a i:visited:focus {
+            color: #D7C800; }
   body .artur-offer-section {
     margin-top: 2em; }
     body .artur-offer-section .artur-offer-title-row,
@@ -335,3 +345,5 @@ body {
         color: white; }
       body .artur-footer .artur-privacy-policy p a:visited {
         color: black; }
+        body .artur-footer .artur-privacy-policy p a:visited:hover, body .artur-footer .artur-privacy-policy p a:visited:focus {
+          color: white; }

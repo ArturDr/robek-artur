@@ -19,10 +19,18 @@
     $facebook = esc_url(get_field('facebook'));
     $instagram = esc_url(get_field('instagram'));
     $google = esc_url(get_field('google'));
+    $whatsapp = esc_url(get_field('whatsapp'));
     ?>
     <div class="row artur-blog-title-row">
         <div class="col text-center">
             <h1><?php echo get_the_title(); ?></h1>
+        </div>
+    </div>
+    <div class="row artur-contact-description">
+        <div class="col">
+            <?php
+            the_content();
+            ?>
         </div>
     </div>
     <div class="row artur-contact-row">
@@ -52,6 +60,9 @@
                 </div>
                 <div class="col-3 col-md-1 text-center">
                     <a href="<?php echo $instagram; ?>"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="col-3 d-md-none text-center">
+                    <a href="<?php echo $whatsapp; ?>"><i class="fa-brands fa-square-whatsapp"></i></a>
                 </div>
             </div>
         </div>
