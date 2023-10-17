@@ -20,6 +20,7 @@
     $instagram = esc_url(get_field('instagram'));
     $google = esc_url(get_field('google'));
     $whatsapp = esc_url(get_field('whatsapp'));
+    $youtube = esc_url(get_field('youtube'));
     ?>
     <div class="row artur-blog-title-row">
         <div class="col text-center">
@@ -61,8 +62,8 @@
                 <div class="col-3 col-md-1 text-center">
                     <a href="<?php echo $instagram; ?>"><i class="fa-brands fa-square-instagram"></i></a>
                 </div>
-                <div class="col-3 d-md-none text-center">
-                    <a href="<?php echo $whatsapp; ?>"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <div class="col-3 col-md-1 text-center">
+                    <a href="<?php echo $youtube; ?>"><i class="fa-brands fa-square-youtube"></i></a>
                 </div>
             </div>
         </div>
